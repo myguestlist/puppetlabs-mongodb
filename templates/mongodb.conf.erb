@@ -197,3 +197,9 @@ sslCAFile = <%= @ssl_ca %>
 sslWeakCertificateValidation = <%= @ssl_weak_cert %>
 <% end -%>
 <% end -%>
+
+<% if @config_data -%>
+<% @config_data.each do |k,v| -%>
+<%= k %>: <%= v %>
+<% end -%>
+<% end -%>
